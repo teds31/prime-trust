@@ -117,3 +117,25 @@ header {
 #lawsuit .lead {
   color: #ffffff;
 }
+
+/* ======================= */
+/* Lawsuit */
+
+#litigation h3 {
+  color: #5ecb71;
+}
+
+#litigation .lead {
+  color: #6c757d;
+}
+
+#litigation .btn {
+  color: #ffffff;
+  background-color: #5ecb71;
+  border-radius: 0;
+}
+
+#litigation img {
+  height: 200px;
+  width: 200px;
+}
