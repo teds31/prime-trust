@@ -78,10 +78,10 @@ header {
 #sued-features img {
   height: 503px;
   width: 557px;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
-  z-index: 20;
+  z-index: 20; */
 }
 
 #sued-features h3 {
@@ -96,4 +96,24 @@ header {
   color: #ffffff;
   background-color: #5ecb71;
   border-radius: 0;
+}
+
+/* ===================== */
+/* Lawsuit */
+#lawsuit {
+  background-color: #25314f;
+}
+
+#lawsuit .btn {
+  color: #ffffff;
+  background-color: #5ecb71;
+  border-radius: 0;
+}
+
+#lawsuit h3 {
+  color: #5ecb71;
+}
+
+#lawsuit .lead {
+  color: #ffffff;
 }
