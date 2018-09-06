@@ -2,9 +2,8 @@ html, p {
   font-family: "AtlasGrotesk", sans-serif;
 }
 
-
+/* ======================== */
 /* Header */
-
 header {
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
@@ -12,7 +11,7 @@ header {
   background-size: cover;
 }
 
-
+/* ======================== */
 /* Navbar */
 .navbar-nav a {
   font-family: "AtlasGrotesk", sans-serif;
@@ -31,7 +30,6 @@ header {
   font-family: "AtlasGrotesk", sans-serif;
   font-size: 15px;
   border-radius: 0;
-  text-decoration: none;
 }
 
 /* Hero */
@@ -40,8 +38,13 @@ header {
   background-color: #5ecb71;
   border-radius: 0;
 }
-
+/* ====================== */
 /* Asset */
+
+#assets {
+  background-color: #f8f9fa;
+}
+
 #assets h3 {
   color: #5ecb71;
 }
@@ -59,4 +62,38 @@ header {
 #assets p {
   color: #6c757d;
   align-content: flex-end;
+}
+
+/* ===================== */
+/* Sued Features */
+
+#sued-features {
+  background-color: #ffffff;
+}
+
+#sued-features .container {
+  position: relative;
+}
+
+#sued-features img {
+  height: 503px;
+  width: 557px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+#sued-features h3 {
+  color: #5ecb71;
+}
+
+#sued-features .lead {
+  color: #6c757d;
+}
+
+#sued-features .btn {
+  color: #ffffff;
+  background-color: #5ecb71;
+  border-radius: 0;
 }
