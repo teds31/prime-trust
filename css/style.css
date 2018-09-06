@@ -1,0 +1,27 @@
+/* Header */
+
+header {
+  background-image: url('../img/background.png');
+  position: cover;
+  min-height: 600px;
+}
+
+
+/* Navbar */
+.navbar-nav {
+  font-family: "AtlasGrotesk", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.navbar-brand {
+  width: 100px;
+  height: 50px;
+}
+
+.btn-outline {
+  outline-color: #5ecb71;
+}
+
+
+/* Hero */
