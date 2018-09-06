@@ -2,7 +2,8 @@
 
 header {
   background-image: url('../img/background.png');
-  position: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 600px;
 }
 
@@ -19,9 +20,19 @@ header {
   height: 50px;
 }
 
-.btn-outline {
+#navSignIn {
   outline-color: #5ecb71;
+  color: #5ecb71;
+  font-family: "AtlasGrotesk", sans-serif;
+  font-size: 15px;
+  border-radius: 0;
 }
 
 
 /* Hero */
+
+#hero .btn {
+  color: #ffffff;
+  background-color: #5ecb71;
+  border-radius: 0;
+}
