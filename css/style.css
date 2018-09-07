@@ -139,3 +139,18 @@ header {
   height: 200px;
   width: 200px;
 }
+
+/* ================= */
+/* Resources */
+#resources {
+  background-color: #13284c;
+}
+
+#resources img {
+  height: 50px;
+  width: 50px;
+}
+
+#resources a {
+  color: #5ecb71;
+}
