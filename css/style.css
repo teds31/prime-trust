@@ -104,15 +104,12 @@ header {
 #assets {
   background-color: #f8f9fa;
   padding-top: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
+  color: #6c757d;
 }
 
 #assets h3 {
   color: #5ecb71;
-}
-
-#assets p .lead {
-  color: #6c757d;
 }
 
 #assets img {
@@ -130,9 +127,22 @@ header {
   color: #5ecb71
 }
 
+#assets .risk {
+  margin-right: 7%;
+}
+
+#assets ul {
+  margin-top: 7%;
+}
+
+#assets li {
+  letter-spacing: 0.1rem;
+}
+
 /* Target any li tag that is immediately next to another li tag */
 #assets .feature-list li + li {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /* ===================== */
@@ -140,7 +150,7 @@ header {
 
 #sued-features {
   background-color: #ffffff;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
 #sued-features .container {
@@ -149,8 +159,8 @@ header {
 
 #sued-features img {
   height: 503px;
-  width: 557px;
-  padding-right: 10%;
+  width: 600px;
+  padding-right: 20%;
   transform: translate3d(0, -4.6rem, 0);
 }
 
