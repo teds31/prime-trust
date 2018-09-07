@@ -154,3 +154,17 @@ header {
 #resources a {
   color: #5ecb71;
 }
+
+/* ======================= */
+/* Quotes */
+
+#quotes .card {
+  background-color: #5ecb71;
+  color: #ffffff;
+}
+
+#quotes .btn {
+  color: #ffffff;
+  background-color: #6c757d;
+  border-radius: 0;
+}
