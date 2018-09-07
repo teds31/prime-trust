@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
@@ -15,16 +15,24 @@
   <header>
 
     <!-- Nav -->
-    <nav class="navbar navbar-expand-md py-2">
+    <nav class="navbar navbar-expand-md py-2 navbar-dark">
       <div class="container">
 
         <a href="index.html" class="navbar-brand">
           <img src="img/prime-trust-logo.png" alt="Logo">
         </a>
 
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navNavbar">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navNavbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
 
         <div class="collapse navbar-collapse" id=#navbarNav>
           <ul class="navbar-nav m-auto">
@@ -35,10 +43,16 @@
             <li class="nav-item"><a href="" class="nav-link">Trust FAQS</a></li>
             <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
             <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
-            <!-- <li class="nav-item"> -->
+            <li class="divider-horizontal"></li>
+            <li class="nav-item">
+              <a
+                href=""
+                class="nav-link btn btn-primary btn-outline-success btn-lg"
+                id="navSignIn">
+                  Sign In
+              </a>
             </li>
           </ul>
-          <a href=""><button class="nav-link btn btn-outline-success btn-lg btn-block" id="navSignIn">Sign In</button></a>
         </div>
 
       </div>
@@ -49,10 +63,18 @@
     <div class="jumbotron-fluid py-4" id="hero">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-4 text-white">High Litigation<br>Risk Professions</h1>
-            <p class="lead text-white">Protecting what's yours with an<br>Asset Protection Trust</p>
-            <a href=""><button class="btn btn-inline-block">Create Your Trust</button></a>
+        <div class="col-md-12">
+          <h1 class="text-white hero-copy">
+            <div>High Litigation</div>
+            <div>Risk Professions</div>
+          </h1>
+
+          <p class="text-white lead">
+            Protecting what's yours with an Asset Protection Trust.
+          </p>
+
+          <div class="call-to-action">
+            <a href="" class="btn btn-primary btn-inline-block">Create Your Trust</a>
           </div>
         </div>
       </div>
@@ -65,23 +87,53 @@
   <!-- Asset Features -->
   <section id="assets">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 py-4">
+      <div class="row align-items-center">
+        <div class="col-md-5 py-4">
           <h3 class="display-3 py-2">Are you<br>at <span style="color:#13284c;"><i>Risk</i></span> ?</h3>
           <p class="lead">Asset trusts are great for protecting your assets,
             but they are especially critical for people who have a higher risk of being sued.</p>
           </div>
-          <div class="col-md-4 py-4">
-            <span class="d-inline"><i class="far fa-check-square"></i><p>Small Business Owners</p></span>
-            <span class="d-inline"><i class="far fa-check-square"></i><p>Doctors</p></span>
-            <span class="d-inline"><i class="far fa-check-square"></i><p>Entreprenuers</p></span>
-            <span class="d-inline"><i class="far fa-check-square"></i><p>Real Estate Professionals</p></span>
-          </div>
-          <div class="col-md-4 py-4">
-            <span class="d-inline"><i class="far fa-check-square"></i><p>CPA's & Auditors</p></span>
-            <span class="d-inline"><i class="far fa-check-square"></i><p>Financial Planners</p></span>
-            <span class="d-inline"><i class="far fa-check-square"></i><p>Brokers</p></span>
-          </div>
+
+          <div class="row col-md-7 py-8">
+            <ul class="col-md-4 py-4 list-unstyled feature-list">
+              <li>
+                <i class="far fa-check-square"></i>
+                Small Business Owners
+              </li>
+
+              <li>
+                <i class="far fa-check-square"></i>
+                Doctors
+              </li>
+
+              <li>
+                <i class="far fa-check-square"></i>
+                Entreprenuers
+              </li>
+
+              <li>
+                <i class="far fa-check-square"></i>
+                Real Estate Professionals
+              </li>
+            </ul>
+
+            <ul class="col-md-4 py-4 list-unstyled feature-list">
+              <li>
+                <i class="far fa-check-square"></i>
+                CPA's & Auditors
+              </li>
+
+              <li>
+                <i class="far fa-check-square"></i>
+                Financial Planners
+              </li>
+
+              <li>
+                <i class="far fa-check-square"></i>
+                Brokers
+              </li>
+            </ul>
+          </div
         </div>
       </div>
   </section>
@@ -90,14 +142,17 @@
   <!-- Sued Features -->
   <section id="sued-features">
     <div class="container py-4">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-md-6">
-          <img src="img/shield-safe.png" alt="Prime Trust Shield">
+          <img
+            class="hero-image"
+            src="img/shield-safe.png"
+            alt="Prime Trust Shield" />
         </div>
         <div class="col-md-6">
           <h3 class="display-4">What Are My Chances of Getting Sued?</h3>
           <p class="lead">The threat of a lawsuit is very real: over a 100 million cases are filed in the US state courts every year.</p>
-          <a href=""><button class="btn btn-inline-block">Learn More On RocketLawyer.com</button></a>
+          <a href="" class="btn btn-primary btn-inline-block">Learn More On RocketLawyer.com</a>
         </div>
       </div>
     </div>
@@ -109,9 +164,9 @@
     <div class="container text-center py-5">
       <div class="row">
         <div class="col-lg-12">
-          <h3 class="display-4 py-2">Did You Know?</h3>
+          <h3 class="display-5 py-2">Did You Know?</h3>
           <p class="lead">Over 50 percent of civil lawsuits target<br>small businesses annually</p>
-          <a href=""><button class="btn btn-inline-block">Learn More from Law Offices of Richard Palumbo, LLC</button></a>
+          <a href=""><button class="btn btn-primary btn-inline-block">Learn More from Law Offices of Richard Palumbo, LLC</button></a>
         </div>
       </div>
     </div>
@@ -122,7 +177,7 @@
   <section id="litigation">
     <div class="container py-5">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-7">
           <h3 class="display-4 py-2">Litigation... Impossible to plan for,
           but inevitable for most businesses.</h3>
           <p class="lead">Statistics show that somewhere between 36%-53% of small businesses are involved in
@@ -130,9 +185,9 @@
             at any given time. At some point, it’ll likely be you and your business in the trenches.</p>
           <a href=""><button class="btn btn-inline-block">Learn More on Forbes.com</button></a>
         </div>
-        <div class="col-md-4">
-          <img src="img/chart.png" alt="">
-          <img src="img/gavel.png" alt="">
+        <div class="col-md-4 accent-images">
+          <img class="chart" src="img/chart.png" alt="">
+          <img class="gavel" src="img/gavel.png" alt="">
         </div>
       </div>
     </div>
@@ -154,8 +209,8 @@
       <div class="accordion" id="accordion">
         <div class="card">
           <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link ml-auto" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <h5 class="row justify-content-end mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 <img src="img/icon-arrow.png" alt="">
               </button>
             </h5>
@@ -173,7 +228,7 @@
 
         <div class="card">
           <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
+            <h5 class="row justify-content-end mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 <img src="img/icon-arrow.png" alt="">
               </button>
@@ -191,7 +246,7 @@
 
         <div class="card">
           <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
+            <h5 class="row justify-content-end mb-0">
               <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 <img src="img/icon-arrow.png" alt="">
               </button>
@@ -213,13 +268,13 @@
 
   <!-- Quotes   -->
   <div class="container py-5" id="quotes">
-    <div class="row">
+    <div class="row row-equal">
 
       <div class="col-md-4">
         <div class="card">
           <div class="card-body">
-            <p class="card-text text-center">“Real Estate Litigation disputes are multi-faceted”</p>
-            <a href=""><button class="btn btn-inline-block">Savitt Bruce & Willey LLP</button></a>
+            <p class="card-text text-start">“Real Estate Litigation disputes are multi-faceted”</p>
+            <a href="" class="btn btn-block">Savitt Bruce & Willey LLP</a>
           </div>
         </div>
       </div>
@@ -227,8 +282,10 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-body">
-            <p class="card-text text-center">“In today's world, anyone who performs a professional service is a prime candidate for a lawsuit. The accounting profession is no exception.”</p>
-            <a href=""><button class="btn btn-inline-block">The CPA Journal</button></a>
+            <p class="card-text text-start py-2">“In today's world, anyone who performs a
+              professional service is a prime candidate for a lawsuit. The accounting
+              profession is no exception.”</p>
+            <a href="" class="btn btn-block">The CPA Journal</a>
           </div>
         </div>
       </div>
@@ -236,8 +293,10 @@
       <div class="col-md-4">
         <div class="card">
           <div class="card-body">
-            <p class="card-text text-center">“Despite tremendous interest in medical malpractice and its reform… the cumulative incidence of being sued during the course of a physician's career”…2.6% and 18.9% of physicians annually had a claim.”</p>
-            <a href=""><button class="btn btn-inline-block">U.S. National Library of Medicine</button></a>
+            <p class="card-text text-start">“Despite tremendous interest in medical malpractice
+              and its reform… the cumulative incidence of being sued during the course of a
+              physician's career”…2.6% and 18.9% of physicians annually had a claim.”</p>
+            <a href="" class="btn btn-block">U.S. National Library of Medicine</a>
           </div>
         </div>
       </div>
@@ -247,12 +306,42 @@
   <!-- /Quotes -->
 
   <!-- Video -->
+  <section id="video">
+    <div class="container py-5">
+      <div class="row row equal">
+        <div class="col-md-6">
+          <h5 class="display-5">WHAT ARE YOU WAITING FOR</h5>
+          <h3 class="display-3">Start protecting your assets today</h3>
+
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <p class="card-text">“Asset protection is one of the most important things you
+                  can do for your family and a ‘trust’ is not just for the rich.</p>
+
+                <div class="card-actions">
+                  <a href="#">View Video <span><i class="fas fa-play"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <img src="img/video.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- /Video -->
 
   <!-- JS Scripts -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script> <script src="js/bootstrap.min.js"></script> <script> $(function(){ $('.nav-tabs a:first').tab('show'); }); </script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <!-- /JS Scripts -->
+
+
 </body>
 </html>
