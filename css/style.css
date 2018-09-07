@@ -294,6 +294,12 @@ header {
   color: #ffffff
 }
 
+#video .video-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
 #video .card {
   background-color: #13284c;
   width: 500px;
